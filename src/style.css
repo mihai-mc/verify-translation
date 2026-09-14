@@ -1,0 +1,138 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #1f2937;
+  background: #f5f6f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 32px, 640px);
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.card,
+.result-card {
+  background: white;
+  border: 1px solid #dfe3e8;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.description {
+  color: #6b7280;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd4dc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+#result {
+  margin-top: 24px;
+}
+
+.result-card h2 {
+  margin-top: 0;
+}
+
+dl {
+  margin: 24px 0 0;
+}
+
+dt {
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+dd {
+  margin: 4px 0 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.status.valid {
+  background: #cdffd0;
+}
+
+.status.withdrawn {
+  background: #ffcdcd;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.error {
+  border-color: #dc3545;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  padding-bottom: 32px;
+}

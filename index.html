@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Translation Verification</title>
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Translation Verification</h1>
+
+        <p class="description">
+          Verify an authorized translation using the translation request
+          number and date.
+        </p>
+
+        <form id="verification-form">
+          <label for="request-number">
+            Translation Request Number
+          </label>
+
+          <input
+            id="request-number"
+            name="number"
+            type="number"
+            min="1"
+            step="1"
+            required
+          />
+
+          <label for="request-date">
+            Translation Request Date
+          </label>
+
+          <input
+            id="request-date"
+            name="date"
+            type="date"
+            required
+          />
+
+          <button type="submit">
+            Verify translation
+          </button>
+        </form>
+      </section>
+
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 OLTEANU Mihai-Cristian. All rights reserved
+      </p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
